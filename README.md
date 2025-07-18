@@ -11,9 +11,6 @@ You can generate them using the web-push library in Node.js.
 
 Steps:
 
-bash
-Copy
-Edit
 # Install web-push globally or locally
 npm install web-push -g
 
@@ -21,9 +18,6 @@ npm install web-push -g
 web-push generate-vapid-keys
 Output Example:
 
-vbnet
-Copy
-Edit
 Public Key:
 BIZfib_QT8YUr63tIwG8XAGo7iP7V-ErD6_3nLV5lQJKfVH_o1-9cXpAqml-RW9rnQ9ENcEoug0KY3PTBDLgEQo
 
@@ -36,9 +30,6 @@ Private Key → Keep this safe and use in backend to sign notifications.
 📄 Frontend Subscription (React Example)
 In your frontend, register the service worker and subscribe to push notifications:
 
-javascript
-Copy
-Edit
 navigator.serviceWorker.register('/sw.js')
   .then(registration => {
     return registration.pushManager.subscribe({
@@ -54,9 +45,6 @@ navigator.serviceWorker.register('/sw.js')
 ⚙️ Backend Setup (Node.js Example)
 Use the web-push library in your backend to send notifications:
 
-javascript
-Copy
-Edit
 const webpush = require('web-push');
 
 // Set your VAPID keys
