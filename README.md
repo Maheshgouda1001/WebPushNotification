@@ -1,11 +1,11 @@
 # WebPushNotification
 This project demonstrates how to implement Web Push Notifications to keep customers informed about important events in the Nagara Metered Auto application. It allows the backend to send real‑time notifications directly to users’ devices or browsers, even when the web app is not open in the foreground.
 
-📌 Web Push Notification Setup
+# Web Push Notification Setup
 This POC demonstrates sending web push notifications to customers for ride status updates, app announcements, or other alerts.
 It uses Service Workers on the frontend and VAPID keys for secure push subscription.
 
-🔑 Generating VAPID Keys
+# Generating VAPID Keys
 To send notifications, you need a VAPID key pair (public & private).
 You can generate them using the web-push library in Node.js.
 
@@ -27,7 +27,7 @@ Public Key → Use this in the frontend as applicationServerKey.
 
 Private Key → Keep this safe and use in backend to sign notifications.
 
-📄 Frontend Subscription (React Example)
+# Frontend Subscription (React Example)
 In your frontend, register the service worker and subscribe to push notifications:
 
 navigator.serviceWorker.register('/sw.js')
